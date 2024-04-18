@@ -1,9 +1,11 @@
 <script setup>
-
+// import FormData from "./components/form.vue"
+// import DataPage from "./components/data.vue"
 </script>
 
 <template>
- <div>Hello Vue!</div>
+
+<RouterView />
 </template>
 
 <style scoped>

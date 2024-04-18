@@ -1,4 +1,4 @@
-// store/index.js
+
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 
@@ -9,13 +9,13 @@ export const useStore = defineStore('main', () => {
     users.value.push(user);
   };
 
-  const clearUserData = () => {
-    users.value = [];
-  };
+  // const clearUserData = () => {
+  //   users.value = [];
+  // };
 
   return {
     users,
     addUser,
-    clearUserData
+    // clearUserData
   };
 });
