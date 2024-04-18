@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { ref, watch, computed } from 'vue';
+import { ref, computed } from 'vue';
 import { useUserStore } from "../stores";
 
 export default {
@@ -52,8 +52,9 @@ export default {
           firstName: firstName.value,
           lastName: lastName.value
         };
+        //UserData is added to the store 
         store.addUser(userData);
-        console.log('User added to store:', store.users);
+        // console.log('User added to store:', store.users);
         clearForm();
       } else {
         alert('Please enter both first name and last name.');
@@ -65,8 +66,10 @@ export default {
       lastName.value = '';
     };
 
-    // Use a computed property to directly reference the users array from the store
+    //  computed property is used to directly reference the users array from the store
     const users = computed(() => store.users);
+
+
     // watch(() => store.users, (newValue) => {
     //   users.value = newValue;
     // });

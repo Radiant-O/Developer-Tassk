@@ -2,16 +2,16 @@
     <div class="inputFormContainer">
       <div class="container">
       <h2 class="formHeader">Students Page</h2>
-      <data-table :headers="['Student Name']" :data="students"></data-table>
+      <DataComponent :headers="['Student Name']" :data="students"></DataComponent>
     </div>
     </div>
   </template>
   
   <script>
-  import DataTable from './DataTable.vue';
+  import DataComponent from './dataComponent.vue';
   export default {
     components: {
-    DataTable
+      DataComponent
   },
     data() {
       return {
