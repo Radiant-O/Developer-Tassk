@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.nav{
+    @apply bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800
+}
+.navContainer{
+    @apply flex flex-col justify-end mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0
+}
+.navLink{
+    @apply block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:border-0 lg:p-0 dark:text-gray-400  dark:border-gray-700
+}
+.inputFormContainer{
+    @apply flex items-center h-screen w-full 
+}
+.container{
+    @apply w-full bg-teal-50 rounded shadow-lg p-8 m-4 md:w-[50%] md:mx-auto
+}
+.form{
+    @apply mb-4 md:flex md:flex-wrap md:justify-between
+}
+.formHeader{
+    @apply block w-full text-center text-gray-800 text-3xl mb-6 font-bold
+}
+.formField{
+       @apply mb-4 md:w-full flex flex-col;
+}
+.field {
+    @apply border py-2 px-3 text-gray-400;
+  }
+  
+  .field-label {
+    @apply uppercase font-bold text-lg text-gray-800 mb-2;
+  }
+
+  .btn {
+    @apply block text-white uppercase w-full text-lg p-4 rounded mx-auto;
+  }
+  
+  .btn-teal {
+    @apply bg-teal-500;
+  }
+  
+  .btn-teal:hover {
+    @apply bg-teal-700;
+  }
+  .tableHeader{
+    @apply font-bold p-2 border-b border-l border-teal-500 text-left bg-teal-600 text-white
+  }
+  .tableContainer{
+    @apply p-8
+  }
+  .formTable{
+    @apply table-auto border-x border-b w-full
+  }
+  .box{
+    @apply odd:bg-gray-100 hover:!bg-stone-200
+  }
+  .odd{
+    @apply p-2 border-b border-l text-left
+  }
+  .even{
+    @apply p-2 border-b border-l text-left
+  }

@@ -1,10 +1,9 @@
 <script setup>
-// import FormData from "./components/form.vue"
-// import DataPage from "./components/data.vue"
+import HeaderVue from "./components/header.vue"
 </script>
 
 <template>
-
+<HeaderVue />
 <RouterView />
 </template>
 
